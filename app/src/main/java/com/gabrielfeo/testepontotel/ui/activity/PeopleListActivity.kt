@@ -1,7 +1,8 @@
-package com.gabrielfeo.testepontotel
+package com.gabrielfeo.testepontotel.ui.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.gabrielfeo.testepontotel.R
 
 class PeopleListActivity : AppCompatActivity() {
 
