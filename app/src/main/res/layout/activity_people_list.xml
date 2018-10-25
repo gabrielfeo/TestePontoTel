@@ -4,12 +4,12 @@
 	android:layout_width = "match_parent"
 	android:layout_height = "match_parent"
 	android:padding = "@dimen/activity_margin_default"
-	tools:context = ".DataListActivity">
+	tools:context = ".PeopleListActivity">
 
 	<android.support.v7.widget.RecyclerView
-		android:id = "@+id/datalist_rv_list"
+		android:id = "@+id/peoplelist_rv_list"
 		android:layout_width = "match_parent"
 		android:layout_height = "match_parent"
-		tools:listitem = "@layout/item_data" />
+		tools:listitem = "@layout/listitem_person" />
 
 </android.support.constraint.ConstraintLayout>

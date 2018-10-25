@@ -1,12 +1,12 @@
 package com.gabrielfeo.testepontotel
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 
-class DataListActivity : AppCompatActivity() {
+class PeopleListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_data_list)
+        setContentView(R.layout.activity_people_list)
     }
 }

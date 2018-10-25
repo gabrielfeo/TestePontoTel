@@ -2,7 +2,7 @@
 <android.support.design.card.MaterialCardView xmlns:android = "http://schemas.android.com/apk/res/android"
 	xmlns:app = "http://schemas.android.com/apk/res-auto"
 	xmlns:tools = "http://schemas.android.com/tools"
-	android:id = "@+id/dataitem_cv_cardview"
+	android:id = "@+id/listitem_person_cv_cardview"
 	android:layout_width = "match_parent"
 	android:layout_height = "wrap_content"
 	android:layout_marginBottom = "16dp"
@@ -10,41 +10,41 @@
 	app:cardElevation = "4dp">
 
 	<android.support.constraint.ConstraintLayout
-		android:id = "@+id/dataitem_cl_card_layout"
+		android:id = "@+id/listitem_person_cl_card_layout"
 		android:layout_width = "match_parent"
 		android:layout_height = "match_parent"
 		android:padding = "16dp">
 
 		<TextView
-			android:id = "@+id/dataitem_tv_id"
+			android:id = "@+id/listitem_person_tv_id"
 			android:layout_width = "0dp"
 			android:layout_height = "wrap_content"
 			android:layout_marginBottom = "4dp"
-			app:layout_constraintBottom_toTopOf = "@id/dataitem_tv_name"
+			app:layout_constraintBottom_toTopOf = "@id/listitem_person_tv_name"
 			app:layout_constraintEnd_toEndOf = "parent"
 			app:layout_constraintStart_toStartOf = "parent"
 			app:layout_constraintTop_toTopOf = "parent"
 			tools:text = "ID: 1234" />
 
 		<TextView
-			android:id = "@+id/dataitem_tv_name"
+			android:id = "@+id/listitem_person_tv_name"
 			android:layout_width = "0dp"
 			android:layout_height = "wrap_content"
 			android:layout_marginBottom = "4dp"
-			app:layout_constraintBottom_toTopOf = "@id/dataitem_tv_pwd"
+			app:layout_constraintBottom_toTopOf = "@id/listitem_person_tv_pwd"
 			app:layout_constraintEnd_toEndOf = "parent"
 			app:layout_constraintStart_toStartOf = "parent"
-			app:layout_constraintTop_toBottomOf = "@id/dataitem_tv_id"
+			app:layout_constraintTop_toBottomOf = "@id/listitem_person_tv_id"
 			tools:text = "Name: Afonso" />
 
 		<TextView
-			android:id = "@+id/dataitem_tv_pwd"
+			android:id = "@+id/listitem_person_tv_pwd"
 			android:layout_width = "0dp"
 			android:layout_height = "wrap_content"
 			app:layout_constraintBottom_toBottomOf = "parent"
 			app:layout_constraintEnd_toEndOf = "parent"
 			app:layout_constraintStart_toStartOf = "parent"
-			app:layout_constraintTop_toBottomOf = "@id/dataitem_tv_name"
+			app:layout_constraintTop_toBottomOf = "@id/listitem_person_tv_name"
 			tools:text = "Pwd: 9845" />
 
 	</android.support.constraint.ConstraintLayout>
