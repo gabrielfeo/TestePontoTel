@@ -6,11 +6,13 @@ import android.view.ViewGroup
 import com.gabrielfeo.testepontotel.R
 import com.gabrielfeo.testepontotel.model.Person
 import com.gabrielfeo.testepontotel.ui.viewHolder.PersonViewHolder
-import kotlin.properties.Delegates
 
 class PersonAdapter : RecyclerView.Adapter<PersonViewHolder>() {
 
-    val peopleList: List<Person>? by Delegates.observable(emptyList()) { _, _, _ -> notifyDataSetChanged() }
+    var peopleList: List<Person>? = null
+        set(value) {
+            value.also { notifyDataSetChanged() }
+        }
 
     override fun getItemCount(): Int = peopleList?.size ?: 0
 
