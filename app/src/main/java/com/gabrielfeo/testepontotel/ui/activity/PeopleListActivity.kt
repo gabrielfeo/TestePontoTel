@@ -4,6 +4,7 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.gabrielfeo.testepontotel.R
 import com.gabrielfeo.testepontotel.model.Person
@@ -26,9 +27,10 @@ class PeopleListActivity : AppCompatActivity() {
         observePeople()
     }
 
-    private fun setupRecyclerView() {
-        recyclerView.adapter = this.adapter
-        recyclerView.setHasFixedSize(true)
+    private fun setupRecyclerView() = recyclerView.apply {
+        adapter = this@PeopleListActivity.adapter
+        layoutManager = LinearLayoutManager(this@PeopleListActivity)
+        setHasFixedSize(true)
     }
 
     private fun observePeople() = viewModel.people.observe(this, Observer<List<Person>> {

@@ -9,9 +9,11 @@ import com.gabrielfeo.testepontotel.ui.viewHolder.PersonViewHolder
 
 class PersonAdapter : RecyclerView.Adapter<PersonViewHolder>() {
 
-    var peopleList: List<Person>? = null
-        set(value) {
-            value.also { notifyDataSetChanged() }
+    private var _peopleList: List<Person>? = null
+    var peopleList: List<Person>?
+        get() = _peopleList
+        set(newList) {
+            _peopleList = newList.also { notifyDataSetChanged() }
         }
 
     override fun getItemCount(): Int = peopleList?.size ?: 0
