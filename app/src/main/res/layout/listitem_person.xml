@@ -5,7 +5,10 @@
 	android:id = "@+id/listitem_person_cv_cardview"
 	android:layout_width = "match_parent"
 	android:layout_height = "wrap_content"
-	android:layout_marginBottom = "16dp"
+	android:layout_marginStart = "@dimen/activity_margin_default"
+	android:layout_marginTop = "@dimen/list_items_margin"
+	android:layout_marginEnd = "@dimen/activity_margin_default"
+	android:layout_marginBottom = "@dimen/list_items_margin"
 	app:cardCornerRadius = "4dp"
 	app:cardElevation = "4dp">
 
